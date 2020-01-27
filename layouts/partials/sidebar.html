@@ -1,0 +1,10 @@
+<ul>
+  {{ range .Pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ if .Pages }}
+        {{ partial "sidebar.html" . }}
+      {{ end }}
+    </li>
+  {{ end }}
+</ul>

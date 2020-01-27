@@ -1,7 +1,10 @@
-{{define "main"}}
-  {{if .Site.Home.Content }}
-    {{.Site.Home.Content}}
-  {{else}}
+{{ define "title" }}
+  {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+  {{ if .Site.Home.Content }}
+    {{ .Site.Home.Content }}
+  {{ else }}
     <h1>Customize your own home page</h1>
     <p>
       The site is working. Don't forget to customize this homepage with your own. You typically have 3 choices :
@@ -11,5 +14,5 @@
       <li>Create an <b>index.html</b> file in the <b>static</b> folder and fill the file with HTML content</li>
       <li>Configure your server to automatically redirect home page to one your documentation page</li>
     </ol>
-  {{end}}
-{{end}}
+  {{ end }}
+{{ end }}
