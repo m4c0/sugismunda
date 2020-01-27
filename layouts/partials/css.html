@@ -3,4 +3,4 @@
   {{ $css = $css | append (printf "css/theme-%s.css" . | resources.Get) }}
 {{ end }}
 {{ $css := $css | resources.Concat "css/main.css" | minify | fingerprint -}}
-<link rel="stylesheet" href="{{ $css.Permalink }}">
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">

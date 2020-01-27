@@ -16,14 +16,14 @@
     </div>
     <div id="content" class="flex-grow-1 h-flex">
       <nav id="sidebar">
-        {{ block "sidebar" . }}{{ partial "sidebar.html" . }}{{ end }}
+        {{ block "sidebar" . }}{{ partial "sidebar.html" .Site.Home }}{{ end }}
       </nav>
       <div id="main" class="flex-grow-1">
         {{ block "main" . }}{{ end }}
       </div>
     </div>
     <div id="footer">
-      {{ block "footer" . }}{{ end }}
+      {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
     </div>
   </body>
 </html>
