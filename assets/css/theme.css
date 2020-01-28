@@ -40,20 +40,25 @@ ol, ul {
 #sidebar aside {
   padding: 1rem;
 }
-#sidebar aside > ul {
-  padding: 0;
-}
 #sidebar li {
   line-height: 1.5rem;
+  position: relative;
 }
-#sidebar li.branch > .link {
-  cursor: pointer;
-}
-#sidebar li.branch > .link:hover {
-  background: #15b52b;
-}
-#sidebar li.branch a:hover {
+#sidebar li a:hover {
   color: #b3b3b3;
+}
+#sidebar li span:before {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  content: '';
+  cursor: pointer;
+  display: inline-block;
+  left: -1em;
+  padding: 3px;
+  position: absolute;
+  top: 0.3em;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 #sidebar ul {
   list-style-type: none;
