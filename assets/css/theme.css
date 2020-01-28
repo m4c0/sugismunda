@@ -34,12 +34,29 @@ ol, ul {
   border-right: 1px solid #b3b3b3;
   padding: 0;
   overflow-y: scroll;
-  min-width: 15rem;
-  max-width: 15rem;
+  min-width: 18rem;
+  max-width: 18rem;
 }
-#sidebar > ul {
+#sidebar aside {
   padding: 1rem;
-  padding-left: 1.5rem;
+}
+#sidebar aside > ul {
+  padding: 0;
+}
+#sidebar li {
+  line-height: 1.5rem;
+}
+#sidebar li.branch > .link {
+  cursor: pointer;
+}
+#sidebar li.branch > .link:hover {
+  background: #15b52b;
+}
+#sidebar li.branch a:hover {
+  color: #b3b3b3;
+}
+#sidebar ul {
+  list-style-type: none;
 }
 
 .flex-grow-1 {

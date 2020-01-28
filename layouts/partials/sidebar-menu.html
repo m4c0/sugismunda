@@ -1,0 +1,11 @@
+<ul>
+  {{ range .Pages }}
+    {{ $css := cond (gt (len .Page.Pages) 0) "branch" "" }}
+    <li class="{{ $css }}">
+      <div class="link"><a href="{{ .RelPermalink }}">{{ .Name }}</a></div>
+      {{ if .Page.Pages }}
+        {{ partial "sidebar-menu.html" .Page }}
+      {{ end }}
+    </li>
+  {{ end }}
+</ul>
