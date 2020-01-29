@@ -1,0 +1,4 @@
+{{ $js := resources.Get "js/highlight.pack.js" | slice }}
+{{ $js := $js | resources.Concat "js/main.js" | minify | fingerprint -}}
+<script src="{{ $js.RelPermalink }}"></script>
+<script>hljs.initHighlightingOnLoad();</script>

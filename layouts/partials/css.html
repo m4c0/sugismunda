@@ -1,4 +1,7 @@
-{{ $css := resources.Get "css/theme.css" | slice }}
+{{ $highlight := resources.Get "css/atom-one-dark-reasonable.css" }}
+{{ $theme := resources.Get "css/theme.css" }}
+
+{{ $css := slice $highlight $theme }}
 {{ with .Site.Params.themeVariant }}
   {{ $css = $css | append (printf "css/theme-%s.css" . | resources.Get) }}
 {{ end }}

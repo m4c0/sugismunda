@@ -127,3 +127,19 @@ img {
   display: flex;
   flex-direction: column;
 }
+
+.hljs {
+  margin: 1em;
+  padding: 1em;
+}
+
+pre:not(.highlight) {
+  display: block;
+  margin: 1em;
+  overflow-x: auto;
+  padding: 1em;
+  line-height: 1.3em;
+  color: #abb2bf;
+  background: #282c34;
+  border-radius: 5px;
+}
