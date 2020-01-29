@@ -22,12 +22,16 @@ body, html {
   padding: 0;
 }
 
-img {
-  max-width: 90%;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fancy-font-family);
 }
-ol, ul {
-  margin: 0;
-  padding-left: 1rem;
+
+img {
+  box-shadow: 0 0 0.2em 0 var(--palette-fg-main);
+  display: block;
+  margin: 0 auto;
+  max-height: 20rem;
+  max-width: 90%;
 }
 
 #content {
@@ -48,6 +52,22 @@ ol, ul {
   padding: 0.3em 0.5em;
   z-index: 100;
 }
+#header a {
+  color: var(--palette-fg-main);
+  text-decoration: none;
+}
+#header a:hover {
+  text-decoration: underline;
+}
+#header .home-link {
+  font-size: 120%;
+}
+#header .version {
+  margin-top: 0.2em;
+}
+#header .version select {
+  vertical-align: text-bottom;
+}
 #main {
   background: var(--palette-bg-main);
   padding: 1rem 1em;
@@ -64,6 +84,11 @@ ol, ul {
 }
 #sidebar a {
   color: var(--palette-fg-main);
+  font-size: 90%;
+  text-decoration: none;
+}
+#sidebar a:hover {
+  text-decoration: underline;
 }
 #sidebar aside {
   padding: 1rem;
@@ -87,6 +112,8 @@ ol, ul {
 }
 #sidebar ul {
   list-style-type: none;
+  margin: 0;
+  padding-left: 1rem;
 }
 
 .flex-grow-1 {
