@@ -26,14 +26,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--fancy-font-family);
 }
 
-img {
-  box-shadow: 0 0 0.2em 0 var(--palette-fg-main);
-  display: block;
-  margin: 0 auto;
-  max-height: 20rem;
-  max-width: 90%;
+#body {
+  height: 100%;
 }
-
 #content {
   overflow: hidden;
 }
@@ -72,6 +67,15 @@ img {
   background: var(--palette-bg-main);
   padding: 1rem 1em;
   overflow-y: scroll;
+}
+#main a.image {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+#main img {
+  max-height: 20rem;
+  max-width: 90%;
 }
 #sidebar {
   background: var(--palette-bg-extras);

@@ -10,22 +10,22 @@
     {{ block "meta" . }}{{ partial "meta.html" . }}{{ end }}
     {{ block "css" . }}{{ partial "css.html" . }}{{ end }}
   </head>
-  <body class="v-flex">
-    <div id="header">
-      {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
-    </div>
-    <div id="content" class="flex-grow-1 h-flex">
-      <nav id="sidebar">
-        {{ block "sidebar" . }}{{ partial "sidebar.html" . }}{{ end }}
-      </nav>
-      <div id="main" class="flex-grow-1 highlightable">
-        {{ block "main" . }}{{ end }}
+  <body>
+    <div id="body" class="v-flex">
+      <div id="header">
+        {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
+      </div>
+      <div id="content" class="flex-grow-1 h-flex">
+        <nav id="sidebar">
+          {{ block "sidebar" . }}{{ partial "sidebar.html" . }}{{ end }}
+        </nav>
+        <div id="main" class="flex-grow-1 highlightable">
+          {{ block "main" . }}{{ end }}
+        </div>
+      </div>
+      <div id="footer">
+        {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
       </div>
     </div>
-    <div id="footer">
-      {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
-    </div>
-
     {{ block "js" . }}{{ partial "js.html" . }}{{ end }}
-  </body>
 </html>

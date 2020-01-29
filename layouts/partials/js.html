@@ -1,4 +1,8 @@
-{{ $js := resources.Get "js/highlight.pack.js" | slice }}
+{{ $hl := resources.Get "js/highlight.pack.js" }}
+{{ $jq := resources.Get "js/jquery-3.3.1.min.js" }}
+{{ $fl := resources.Get "js/featherlight.min.js" }}
+{{ $th := resources.Get "js/theme.js" }}
+
+{{ $js := slice $hl $jq $fl $th }}
 {{ $js := $js | resources.Concat "js/main.js" | minify | fingerprint -}}
 <script src="{{ $js.RelPermalink }}"></script>
-<script>hljs.initHighlightingOnLoad();</script>
