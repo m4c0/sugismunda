@@ -1,1 +1,18 @@
-{{ .Site.Title }}
+<div class="h-flex">
+  <a class="home-link" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+  <span class="flex-grow-1"></span>
+  {{ if .Site.Params.version }}
+    {{ if .Site.Params.allVersions }}
+      <span class="version">
+        Version:
+        <select>
+          {{ range .Site.Params.allVersions }}
+            <option>{{ . }}</option>
+          {{ end }}
+        </select>
+      </span>
+    {{ else }}
+      <span class="version">Version: {{ .Site.Params.version }}</span>
+    {{ end }}
+  {{ end }}
+</div>
