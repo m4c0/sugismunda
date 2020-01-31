@@ -19,8 +19,10 @@
         <nav id="sidebar">
           {{ block "sidebar" . }}{{ partial "sidebar.html" . }}{{ end }}
         </nav>
-        <div id="main" class="flex-grow-1 highlightable">
-          {{ block "main" . }}{{ end }}
+        <div id="main" class="flex-grow-1">
+          <div class="highlightable">
+            {{ block "main" . }}{{ end }}
+          </div>
         </div>
       </div>
       <div id="footer">
@@ -28,4 +30,5 @@
       </div>
     </div>
     {{ block "js" . }}{{ partial "js.html" . }}{{ end }}
+  </body>
 </html>

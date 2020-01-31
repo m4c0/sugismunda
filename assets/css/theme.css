@@ -68,13 +68,18 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 1em;
   overflow-y: scroll;
 }
+#main > div {
+  margin: 0 auto;
+  max-width: 80em;
+}
 #main a.image {
   display: block;
   margin: 0 auto;
+  width: -moz-max-content;
   width: fit-content;
 }
 #main img {
-  max-height: 20rem;
+  max-height: 50vh;
   max-width: 90%;
 }
 #sidebar {
