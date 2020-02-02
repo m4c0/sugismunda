@@ -28,6 +28,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+pre {
+  font-size: 90%;
+}
+
 #body {
   height: 100%;
 }
@@ -84,6 +88,18 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 50vh;
   max-width: 90%;
 }
+#main table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#main td,
+#main th {
+  border: 1px solid var(--palette-rulers);
+  padding: 4px;
+}
+#main th {
+  background: var(--palette-bg-extras);
+}
 #sidebar {
   background: var(--palette-bg-extras);
   border-right: 1px solid var(--palette-rulers);
@@ -139,7 +155,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
-.hljs {
+/* Asciidoc */
+pre.highlight .hljs {
   margin: 1em;
   padding: 1em;
 }
