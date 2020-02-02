@@ -1,7 +1,7 @@
 :root {
   --fancy-font-family: Tahoma, Geneva, sans-serif;
   --palette-bg-main: #ffffff;
-  --palette-bg-extras: #fefffd;
+  --palette-bg-extras: #fefffc;
   --palette-rulers: #b3b3b3;
   --palette-details: #15b52b;
   --palette-fg-link: #11aa25;
@@ -17,6 +17,7 @@ a:hover {
 
 body, html {
   border: 0;
+  font-size: 17px;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -24,6 +25,7 @@ body, html {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--fancy-font-family);
+  font-weight: 500;
 }
 
 #body {

@@ -17,6 +17,8 @@ table.fit-content {
 }
 .admonitionblock table {
   border-spacing: 0;
+  box-sizing: border-box;
+  width: 100%;
 }
 .admonitionblock td.icon {
   display: none;
@@ -81,6 +83,12 @@ table.fit-content {
 .admonitionblock.important {
   border-top-color: rgb(217, 83, 79);
 }
+.admonitionblock.important table {
+  border: 1px solid var(--palette-rulers);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 0;
+}
 .admonitionblock.important td.content>div.title:before {
   content: "Important: ";
 }
@@ -88,9 +96,14 @@ table.fit-content {
   content: "Important";
 }
 
+.exampleblock {
+  margin: 2rem 1rem;
+}
+
 .exampleblock>.content,
 .imageblock>.content {
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--palette-rulers);
+  border-radius: 5px;
   margin: 0;
 }
 .exampleblock>.title,
@@ -99,7 +112,7 @@ table.fit-content {
 }
 
 .exampleblock>.content {
-  background-color: #faf8f5;
+  background-color: var(--palette-bg-extras);
   padding: 0 15px;
 }
 .imageblock>.content {
