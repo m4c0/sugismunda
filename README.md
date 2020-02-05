@@ -2,9 +2,9 @@
 
 Hugo theme for technical documentation.
 
-There is a lot of incredible themes for creating blogs with Hugo, but it
-certainly lacks examples for technical documentation. This theme tries to fill
-this gap by fulfilling these requirements:
+There is a lot of incredible themes for creating blogs with Hugo. This theme
+has a strong focus on simplicity for technical writers, by fulfilling these
+requirements:
 
 * **Clean interface.** The content should more important than how it looks
 * **Section-based navigation.** Blogs rely a lot in taxonomies (i.e. categories
